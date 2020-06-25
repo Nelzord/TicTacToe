@@ -1,21 +1,5 @@
 import time
 
-def players():
-    time.sleep(.2)
-    print("Player one is X")
-    print "_______________"
-    time.sleep(.2)
-    print("Player two is O")
-    print "_______________"
-
-def printboard(top, mid, bot):
-    print("| " + top[0] + " | " + top[1] + " | " + top[2] + " |")
-    print "+---+---+---+-"
-    print("| " + mid[0] + " | " + mid[1] + " | " + mid[2] + " |")
-    print "+---+---+---+-"
-    print("| " + bot[0] + " | " + bot[1] + " | " + bot[2] + " |")
-
-
 def board():
     flag = False
     top = ["-", "-", "-"]
@@ -180,6 +164,21 @@ def clearboard():
     print " |_____|_|_|_|_|_|___|_|"
     print
     print
+    
+def players():
+    time.sleep(.2)
+    print("Player one is X")
+    print "_______________"
+    time.sleep(.2)
+    print("Player two is O")
+    print "_______________"
+
+def printboard(top, mid, bot):
+    print("| " + top[0] + " | " + top[1] + " | " + top[2] + " |")
+    print "+---+---+---+-"
+    print("| " + mid[0] + " | " + mid[1] + " | " + mid[2] + " |")
+    print "+---+---+---+-"
+    print("| " + bot[0] + " | " + bot[1] + " | " + bot[2] + " |")
 
 def newgame():
     players()
